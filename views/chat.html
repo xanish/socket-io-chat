@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>socket.io chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container padding-small">
+        <article class="panel is-primary">
+            <p class="panel-heading" id="chat-group-name"></p>
+            <div class="panel-block">
+    
+            </div>
+            <div class="panel-block" id="chat-control-block">
+                <form action="" id="chat-form">
+                    <div class="field has-addons flex-grow-1">
+                        <div class="control is-expanded">
+                            <input class="input" type="text" placeholder="Type message..." name="message" id="message" autocomplete="off">
+                        </div>
+                        <p class="control">
+                            <button class="button is-primary">
+                                Send
+                            </button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>
